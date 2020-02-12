@@ -1,0 +1,15 @@
+echo "Q6: 1pt"
+echo "-----------------------------------------------------------------"
+echo "The following line shold be this"
+echo "ATOM     74  C   LEU A 443      -0.403  15.977 127.965  1.00 10.11           C "
+echo "or"
+echo "ATOM    382  CB  MET A 481      -3.203  45.258  81.074  1.00  9.50           C"
+echo "The given line:"
+bash q6.sh | head -1 
+echo "-----------------------------------------------------------------"
+echo "The following line shold be this"
+echo "ATOM      4  O   ASP A 435       9.078  28.509 124.284  1.00 38.78           O "
+echo "or"
+echo "ATOM    135 SE   MET A 450      -8.866  19.181 121.271  1.00 55.26          SE"
+echo "The given line:"
+bash q6.sh | tail -1 
